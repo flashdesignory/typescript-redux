@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-npx create-react-app my-app --template typescript
+npx create-react-app my-app --template typescript<br/>
 npm install redux react-redux @types/redux @types/react-redux
 
 ## Available Scripts
