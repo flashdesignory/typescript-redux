@@ -18,10 +18,10 @@ const Counter: FunctionComponent<CounterProps> = ({ initialCount = 0, amount = 1
 
     return (
         <div className="count">
-            <p>{count}</p>
+            <div data-testid="count-display">{count}</div>
             <div className="buttons">
-                <button onClick={handleDecrement} >-</button>
-                <button onClick={handleIncrement} >+</button>
+                <button data-testid="button-decrement" onClick={handleDecrement} >-</button>
+                <button data-testid="button-increment" onClick={handleIncrement} >+</button>
             </div>
         </div>
     );

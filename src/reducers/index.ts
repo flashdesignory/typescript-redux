@@ -1,6 +1,10 @@
 import { combineReducers } from 'redux';
-import { counterReducer } from './counter';
+import { counterReducer, counterState } from './counter';
 
-export default combineReducers({
-    counter: counterReducer
+export const rootState = {
+    counter: {...counterState},
+}
+
+export const  rootReducer = combineReducers({
+    counter: counterReducer, 
 });
